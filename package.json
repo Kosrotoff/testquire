@@ -1,6 +1,6 @@
 {
   "name": "testquire",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lightweight utility for mocking dependencies in Node.js tests by overriding the native require function at runtime",
   "license": "MIT",
   "author": {
