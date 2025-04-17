@@ -35,8 +35,8 @@ function loadConfig(projectRoot: string): object {
 function resolvePaths(projectRoot: string, paths: string[]): string[] {
   const pathsArray = new Array(paths.length);
 
-  for (let i = 0; i < pathsArray.length; ++i) {
-    pathsArray[i] = path.resolve(projectRoot, pathsArray[i]).replaceAll('\\', '/');
+  for (let i = 0; i < paths.length; ++i) {
+    pathsArray[i] = path.resolve(projectRoot, paths[i]).replaceAll('\\', '/');
   }
 
   return pathsArray;
