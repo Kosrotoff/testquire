@@ -1,4 +1,4 @@
-# 0.1.0 (2025-04-17)
+# [0.1.0](https://github.com/kosrotoff/testquire/compare/b416caf3064184372626de0dfa8e182601152d4e...v0.1.0) (2025-04-17)
 
 
 ### Bug Fixes
