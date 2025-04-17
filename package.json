@@ -1,0 +1,66 @@
+{
+  "name": "testquire",
+  "version": "0.1.0",
+  "description": "A lightweight utility for mocking dependencies in Node.js tests by overriding the native require function at runtime",
+  "license": "MIT",
+  "author": {
+    "name": "Sergey Bondarenko",
+    "email": "kosrotoff2002@gmail.com",
+    "url": "https://github.com/kosrotoff"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "type": "commonjs",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kosrotoff/testquire.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kosrotoff/testquire/issues"
+  },
+  "homepage": "https://github.com/kosrotoff/testquire#readme",
+  "keywords": [
+    "testing",
+    "mock",
+    "mocking",
+    "test-mocking",
+    "require-mock",
+    "dependency-mocking",
+    "unit-testing",
+    "test-utility",
+    "module-mock",
+    "stubs",
+    "testing-tools"
+  ],
+  "scripts": {
+    "prepare": "husky",
+    "prebuild": "shx rm -rf ./dist",
+    "build": "tsc",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "prepublishOnly": "yarn build && yarn changelog"
+  },
+  "dependencies": {
+    "micromatch": "^4.0.8"
+  },
+  "devDependencies": {
+    "@types/micromatch": "^4.0.9",
+    "@types/node": "^22.14.1",
+    "conventional-changelog-cli": "^5.0.0",
+    "husky": "^9.1.7",
+    "shx": "^0.4.0",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

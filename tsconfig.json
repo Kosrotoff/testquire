@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    /*** Essential Production Settings ********************************************/
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /*** Module System ***********************************************************/
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /*** Emit Settings ***********************************************************/
+    "declaration": true,
+    "declarationDir": "./dist",
+    "sourceMap": false,
+    "declarationMap": false,
+    "inlineSources": false,
+    "outDir": "./dist",
+    "removeComments": true,
+    "noEmitOnError": true,
+
+    /*** Code Quality ************************************************************/
+    "skipLibCheck": true,
+    "isolatedModules": true,
+
+    /*** Language Level **********************************************************/
+    "target": "ES2021",
+    "lib": ["ES2021"],
+
+    /*** Path Resolution *********************************************************/
+    "rootDir": "./src",
+    "baseUrl": ".",
+  },
+  "include": ["src/**/*"]
+}

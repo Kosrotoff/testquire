@@ -1,0 +1,15 @@
+# MacOS
+.DS_Store
+
+# Development
+.vscode
+.idea
+
+# Dependencies
+node_modules
+
+# Logs
+yarn-error.log*
+
+# Product
+/dist
