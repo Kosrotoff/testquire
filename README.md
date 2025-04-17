@@ -1,8 +1,8 @@
 # testquire
 
-![npm](https://img.shields.io/npm/v/testquire)
-![license](https://img.shields.io/npm/l/testquire)
-![downloads](https://img.shields.io/npm/dt/testquire)
+[![npm version](https://img.shields.io/npm/v/testquire.svg)](https://www.npmjs.com/package/testquire)
+[![license](https://img.shields.io/npm/l/testquire.svg)](https://github.com/kosrotoff/testquire/blob/main/LICENSE)
+[![downloads](https://img.shields.io/npm/dt/testquire.svg)](https://www.npmjs.com/package/testquire)
 
 **testquire** is a lightweight utility for mocking dependencies in Node.js tests by overriding the native `require` function at runtime.
 
